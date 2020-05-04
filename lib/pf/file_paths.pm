@@ -114,7 +114,8 @@ our (
     $fingerbank_default_config_file,
     $fingerbank_doc_file,
     $api_i18n_dir,
-    $iptable_config_file
+    $iptable_config_file,
+    $maintenance_config_file, $maintenance_default_config_file,
 );
 
 BEGIN {
@@ -206,6 +207,7 @@ BEGIN {
         $fingerbank_doc_file
         $api_i18n_dir
         $iptable_config_file
+        $maintenance_config_file $maintenance_default_config_file
     );
 }
 
@@ -318,6 +320,8 @@ $portal_modules_config_file = catfile($conf_dir,"portal_modules.conf");
 $portal_modules_default_config_file = catfile($conf_dir,"portal_modules.conf.defaults");
 $pfmon_config_file = catfile($conf_dir,"pfmon.conf");
 $pfmon_default_config_file = catfile($conf_dir,"pfmon.conf.defaults");
+$maintenance_config_file = catfile($conf_dir,"maintenance.conf");
+$maintenance_default_config_file = catfile($conf_dir,"maintenance.conf.defaults");
 $switch_filters_config_file = catfile($conf_dir,"switch_filters.conf"); 
 $stats_config_file = catfile($conf_dir, "stats.conf");
 $stats_config_default_file = catfile($conf_dir, "stats.conf.defaults");
@@ -370,6 +374,7 @@ $captiveportal_default_profile_templates_path = catdir ($captiveportal_profile_t
     $fingerbank_collector_env_defaults_file,
     $portal_modules_config_file,
     $template_switches_config_file,
+    $maintenance_config_file,
 );
 
 $pffilter_socket_path = catfile($var_dir, "run/pffilter.sock");
