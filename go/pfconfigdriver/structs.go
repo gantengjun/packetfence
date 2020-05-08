@@ -555,3 +555,11 @@ type ClusterServer struct {
 	ManagementIp string `json:"management_ip"`
 	Host         string `json:"host"`
 }
+
+type Maintenance struct {
+	StructConfig
+	PfconfigMethod          string `val:"element"`
+	PfconfigNS              string `val:"config::Maintenance"`
+	PfconfigDecodeInElement string `val:"yes"`
+	Element                 map[string]interface{}
+}
