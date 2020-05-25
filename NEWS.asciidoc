@@ -35,6 +35,7 @@ Bug Fixes
 * Fixes FortiGate returnAuthorizeVPN function (#5409)
 * Barracuda NG firewall SSO SSH fail (#4828)
 * Impossible to set multiple access level in administration rule (#5440)
+* Allow to run a scan even if we don't have OS (#5463)
 
 Version 10.0.0 released on 2020-04-16
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
